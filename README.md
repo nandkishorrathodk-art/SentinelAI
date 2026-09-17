@@ -68,3 +68,4 @@ python -m sentinel.inference.export_openvino --checkpoint checkpoints/sentinel_f
 
 ## 📜 License
 MIT License. Authored by Nandkishor Rathod.
+

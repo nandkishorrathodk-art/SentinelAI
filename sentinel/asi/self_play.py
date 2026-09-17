@@ -140,3 +140,4 @@ class AdversarialSelfPlayArena:
                 self.difficulty_level = max(1, self.difficulty_level - 1)
 
         return match
+
