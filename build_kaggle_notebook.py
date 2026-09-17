@@ -207,7 +207,7 @@ cells = [
             "    '            if new_dist < distances[neighbor]:\\n'\n",
             "    '                distances[neighbor] = new_dist\\n'\n",
             "    '    return distances\\n'\n",
-            ") * 20  # Replicate across multi-domain tokens\n",
+            ") * 50  # Replicate across multi-domain tokens\n",
             "\n",
             "tokenizer = BytePairTokenizer()\n",
             "tokenizer.train(universal_corpus, vocab_size=1024)\n",
@@ -407,8 +407,9 @@ cells = [
             "        return x, y\n",
             "\n",
             "dataset = UniversalChunkDataset(encoded_data, seq_len=128)\n",
-            "train_loader = DataLoader(dataset, batch_size=16, shuffle=True, drop_last=True)\n",
-            "print(f\"Created Universal DataLoader with {len(dataset)} sequence chunks.\")"
+            "batch_size = min(16, max(1, len(dataset)))\n",
+            "train_loader = DataLoader(dataset, batch_size=batch_size, shuffle=True, drop_last=False)\n",
+            "print(f\"Created Universal DataLoader with {len(dataset)} sequence chunks (Batch size: {batch_size}).\")"
         ]
     },
     {
@@ -470,7 +471,7 @@ cells = [
             "        loss_history.append(loss_val)\n",
             "        epoch_loss += loss_val\n",
             "\n",
-            "    avg_loss = epoch_loss / len(train_loader)\n",
+            "    avg_loss = epoch_loss / max(1, len(train_loader))\n",
             "    print(f\"Epoch {epoch+1:02d}/{epochs:02d} | Avg Loss: {avg_loss:.4f} | Time: {time.time()-t0:.1f}s\")\n",
             "\n",
             "print(\"\\n[DONE] Universal Training finished successfully!\")"
