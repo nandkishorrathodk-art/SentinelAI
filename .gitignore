@@ -1,0 +1,22 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Checkpoints & Weights
+*.pt
+*.pth
+*.bin
+*.onnx
+checkpoints/
+output/
+
+# Virtual Environment
+venv/
+.env
+env/
+
+# IDE / Testing
+.pytest_cache/
+.ruff_cache/
+*.log
