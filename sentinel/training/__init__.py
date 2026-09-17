@@ -3,7 +3,7 @@ from sentinel.training.dataset import (
     InstructionDataset,
     StreamingTextDataset,
     load_text_corpus,
-    create_cyber_pretraining_mix,
+    create_universal_pretraining_mix,
 )
 from sentinel.training.trainer import SentinelTrainer, CosineWarmupScheduler
 
@@ -14,6 +14,6 @@ __all__ = [
     "SentinelTrainer",
     "CosineWarmupScheduler",
     "load_text_corpus",
-    "create_cyber_pretraining_mix",
+    "create_universal_pretraining_mix",
 ]
 

@@ -1,6 +1,6 @@
-# 🛡️ SentinelAI — Living Neural ASI Framework
+# 🛡️ SentinelAI — Universal Living Neural ASI Framework
 
-**SentinelAI** is an autonomous, self-evolving Artificial Superintelligence (ASI) foundation built from scratch for cybersecurity, offensive/defensive hacking, code synthesis, multimodal visual perception, and recursive self-improvement.
+**SentinelAI** is an autonomous, self-evolving Artificial Superintelligence (ASI) foundation built from scratch for universal multi-domain reasoning, mathematics, logic, algorithmic computer science, multimodal visual perception, and recursive self-improvement.
 
 ---
 
@@ -14,7 +14,7 @@
   - `L3`: Permanent Semantic Crystals & Knowledge Graphs
   - `Dream Consolidator`: Offline sleep mode that crystallizes lessons and prunes noise.
 - **Cognitive Swarm (10 Sub-Agents)**:
-  - 5 Knowledge Harvesters (Reasoning, Code/AST, Vision, Cyber/Exploit, Multimodal Synthesizer)
+  - 5 Knowledge Harvesters (Formal Reasoning, Code/AST, Vision, Systems & Verification, Multimodal Synthesizer)
   - 5 Meta-Cognitive Agents (Red Team Self-Critic, Curriculum Designer, Memory Architect, Adversarial Quality Gate, MoE Topology Evolver)
 - **ASI Substrate**:
   - `RecursiveCodeEvolver`: Seed AI engine that inspects, benchmarks, and mutates its own source code and architecture.

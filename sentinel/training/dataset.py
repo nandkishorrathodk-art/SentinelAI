@@ -199,20 +199,20 @@ def load_text_corpus(
     return TextChunkDataset(token_ids, seq_len=seq_len)
 
 
-def create_cyber_pretraining_mix(
+def create_universal_pretraining_mix(
     data_dir: str | Path,
     tokenizer,
     seq_len: int = 512,
 ) -> TextChunkDataset:
-    """Load and mix multiple cybersecurity text sources into one dataset.
+    """Load and mix multi-domain general intelligence text sources into one dataset.
 
     Expected directory structure:
         data_dir/
-            exploits/       # CVE descriptions, exploit code
-            commands/        # bash/powershell command logs
-            writeups/        # CTF writeups, pentest reports
-            code/            # Python/C/Rust security tools
-            general/         # general text for language grounding
+            mathematics/    # Formal logic, proofs, arithmetic reasoning
+            code/           # Python, Rust, C algorithms, data structures, systems
+            science/        # Physics, computational theory, empirical knowledge
+            reasoning/      # Chain-of-thought, philosophy, epistemology
+            general/        # Multi-turn language dialogue & analytical text
     """
     data_dir = Path(data_dir)
     all_tokens: list[int] = []

@@ -1,7 +1,7 @@
 [project]
 name = "sentinel-ai"
 version = "0.1.0"
-description = "SentinelAI — Living Neural Agentic Framework for Cybersecurity, Coding & Vision"
+description = "SentinelAI — Universal Living Neural ASI Framework for General Intelligence & Recursive Self-Improvement"
 requires-python = ">=3.12"
 license = {text = "MIT"}
 authors = [{name = "Nandkishor Rathod"}]
